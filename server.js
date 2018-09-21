@@ -45,6 +45,12 @@ res.render('about.hbs',{
 });
 });
 
+app.get('/projects',(req, res) =>{
+    res.render('projects.hbs',{
+        pageTitle: 'Projects Page'
+    });
+    });
+
 app.listen(port,()=>{
     console.log(`sever is up on port ${port}`);
 });
